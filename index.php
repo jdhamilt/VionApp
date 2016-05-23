@@ -7,7 +7,6 @@ for ($i = 0; $i < sizeof($services_json["user-provided"]); $i++){
 		$catalogHost = $services_json["user-provided"][$i]["credentials"]["host"];
 	}
 }
-$catalogHost = "http://ms-catalogapi-superlunar-autorotation.mybluemix.net/";
 
 $parsedURL = parse_url($catalogHost);
 $catalogRoute = $parsedURL["scheme"] . "://" . $parsedURL["host"];
