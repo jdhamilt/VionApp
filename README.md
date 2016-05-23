@@ -1,8 +1,7 @@
 ## Run on Bluemix
 
-* cd to a directory you want the application in.
 * ```git clone https://hub.jazz.net/git/ajlohr/Microservices_UI```
-* cd into the application.
+* ```cd Microservices_UI```
 * ```cf login```
 * ```cf push <name of your application>```
 
