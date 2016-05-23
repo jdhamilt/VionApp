@@ -39,7 +39,7 @@ function loadItems(){
 function addItem(item){
 	var div = document.createElement('div');
 	div.className = 'column';
-	div.innerHTML = "<a class='th' href = '"+item.imgsrc+"'><img src = '"+item.imgsrc+"'/></a></div><h5>"+item.name+"</h5><p>$"+item.usaDollarPrice + " USD</p><p>"+item.description+"</p><a class='button expanded' onclick='orderItem(\""+item._id+"\")'>Buy</a>";
+	div.innerHTML = "<a class='th' href = '"+item.imgsrc+"'><img src = '"+item.imgsrc+"'/></a></div><h5>"+item.name+"</h5><p>$"+item.usaDollarPrice.toLocaleString() + " USD</p><p>"+item.description+"</p><a class='button expanded' onclick='orderItem(\""+item._id+"\")'>Buy</a>";
 	if(item.isNew)
 		document.getElementById('newItemWell').appendChild(div);
 	else
